@@ -371,6 +371,7 @@
         .content-screen6 {
             position: relative;
             min-height: 100vh;
+            z-index: 999;
         }
         
         .control-screen6 {
@@ -408,6 +409,7 @@
             right: 70px;
             cursor: pointer;
             border-radius: 5px;
+            z-index: 99999999999;
         }
         
         .project-web span:not(.arrow) {
@@ -432,4 +434,156 @@
         
         .project-web:hover .arrow {
             transform: translateX(10px);
+        }
+        
+        .img-expe.xs {
+            display: none;
+        }
+        /* tablet */
+        
+        @media screen and (max-width: 1025px) {
+            .text-header {
+                height: auto;
+            }
+            .img-header {
+                top: 87px;
+                right: -35px;
+                position: relative;
+            }
+            .img-header img {
+                width: 100%;
+            }
+            .text-thanks {
+                width: 100%;
+                transform: scale(1);
+                margin-top: 90px;
+            }
+            .left-about .header-about {
+                opacity: .2;
+            }
+            .box-thanks {
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+            .box-thanks>div img {
+                display: none;
+            }
+            .text-achie-header .achie {
+                opacity: .2;
+            }
+            .left-about .img-about {
+                width: 120%;
+                top: 90px;
+                left: -57%;
+            }
+            .text-header p {
+                z-index: 99;
+            }
+            .screen6-content,
+            .content-screen6 {
+                min-height: auto;
+            }
+            a.button-thanks-contact {
+                position: static;
+            }
+            a.button-thanks-contact button {
+                font-size: 30px;
+            }
+            .screen6 {
+                min-height: 70vh;
+                padding-bottom: 30px;
+            }
+            .circle-radius {
+                right: 30px;
+                top: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 769px) {
+            .left-about .header-about {
+                opacity: 1;
+            }
+            .screen2-content-header {
+                flex-direction: column;
+            }
+            .img-about {
+                display: none;
+            }
+            .letter {
+                position: static;
+                margin-bottom: 30px;
+            }
+            .pd-img {
+                flex-direction: column;
+            }
+            .circle-radius {
+                display: none;
+            }
+            .letter-content>p {
+                top: 140px;
+            }
+            .timeline p {
+                font-size: 20px;
+            }
+        }
+        /* mobile */
+        
+        @media screen and (max-width: 480px) {
+            .box-thanks>div img,
+            .img-about {
+                display: none;
+            }
+            .img-header {
+                right: -10px;
+            }
+            .left-about .header-about {
+                position: static;
+                width: 100%;
+            }
+            .text-achie-header .achie {
+                width: 100%;
+                opacity: 1;
+                margin-bottom: 50px;
+                margin-right: 0;
+            }
+            .img-achie {
+                display: none;
+            }
+            .content-achie {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .screen4 {
+                min-height: auto;
+            }
+            .project-main {
+                flex-direction: column;
+            }
+            .project-content {
+                margin-bottom: 30px;
+            }
+            .project-header img {
+                width: 70%;
+            }
+            a.button-thanks-contact button {
+                font-size: 20px;
+            }
+            .img-expe.md {
+                display: none;
+            }
+            .img-expe.xs {
+                display: block;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            .expe-header {
+                text-align: center;
+            }
+            .expe-header img {
+                width: 100%;
+            }
+            .logo-expe {
+                margin-top: 40px;
+            }
         }

@@ -586,4 +586,19 @@
             .logo-expe {
                 margin-top: 40px;
             }
+            .logo-ex img {
+                padding-bottom: 30px;
+            }
+            .letter-content>p {
+                top: 65px;
+            }
+            .timeline-head img {
+                width: 100%;
+            }
+            .timeline-main {
+                margin-top: 30px;
+            }
+            .timeline p {
+                font-size: 10px;
+            }
         }

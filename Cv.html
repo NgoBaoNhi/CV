@@ -252,7 +252,7 @@
 
         function next() {
             //remove active
-            document.querySelector(".letter.active ").classList.remove("active ");
+            document.querySelector(".letter.active ").classList.remove("active");
             switch (index) {
                 case document.querySelectorAll(".letter ").length - 1:
                     index = 0;
@@ -261,12 +261,12 @@
                     ++index;
                     break;
             }
-            document.querySelectorAll(".letter ")[index].classList.add("active ");
+            document.querySelectorAll(".letter ")[index].classList.add("active");
         }
 
         function prev() {
             //remove active
-            document.querySelector(".letter.active ").classList.remove("active ");
+            document.querySelector(".letter.active ").classList.remove("active");
             switch (index) {
                 case 0:
                     index = document.querySelectorAll(".letter ").length - 1;
@@ -275,7 +275,7 @@
                     --index;
                     break;
             }
-            document.querySelectorAll(".letter ")[index].classList.add("active ");
+            document.querySelectorAll(".letter ")[index].classList.add("active");
         }
     </script>
 </body>
